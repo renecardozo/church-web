@@ -1,0 +1,9 @@
+{
+  "name": "app-church-lvc",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "#1.4.9",
+    "angular-route": "#1.4.9"
+  },
+  "private": true
+}

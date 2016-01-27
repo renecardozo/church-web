@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="appChurchLvc">
+<head>
+	<title>La Voz de Cristo</title>
+	<link rel="stylesheet" href="libs/css/styles.css">
+	<script src="bower_components/angular/index.js" type="text/javascript"></script>
+	<script src="bower_components/angular-route/index.js" type="text/javascript"></script>
+	<script src="scripts/app.js"></script>
+	<script src="scripts/modules/home/controllers/home.js" type="text/javascript"></script>
+	<script src="scripts/modules/about/controllers/about.js" type="text/javascript"></script>
+	<script src="scripts/modules/login/controllers/login.js" type="text/javascript"></script>
+	<script src="scripts/modules/news/controllers/news.js" type="text/javascript"></script>
+	<script src="scripts/modules/contact/controllers/contact.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- Menu -->
+	<div id="menu">
+		<ul id="nav">
+		  <li><a href="#home">Home</a></li>
+		  <li><a href="#news">News</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		  <ul style="float:right;list-style-type:none;">
+		    <li><a class="active" href="#about">About</a></li>
+		    <li><a href="#login">Login</a></li>
+		  </ul>
+		</ul>
+	</div>
+	<div ng-view></div>
+</body>
+</html>
