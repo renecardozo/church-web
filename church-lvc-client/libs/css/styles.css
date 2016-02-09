@@ -1,6 +1,24 @@
-*{
-	margin: 0;
-    padding: 0;
+/* Design by http://www.dreamtemplate.com */
+@charset "utf-8";
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+    color:#929292;
+    font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+    background-color:#141e2c;
+}
+html, .main {
+    padding:0;
+    margin:0;
+}
+.clr {
+    clear:both;
+    padding:0;
+    margin:0;
+    width:100%;
+    font-size:0;
+    line-height:0;
 }
 #menu{
 	position:relative;

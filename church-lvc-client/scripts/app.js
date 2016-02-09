@@ -7,24 +7,27 @@ var appChurchLvc = angular.module('appChurchLvc', ['ngRoute']);
 
 appChurchLvc.config(['$routeProvider', function ($routeProvider) {
 	$routeProvider
-		.when('/', {
+		.when('/home', {
 			templateUrl: 'scripts/modules/home/views/home.html',
 			controller: 'homeController'
-		});
-		// .when('/home', {
-		// 	templateUrl: '../modules/views/contact.html',
-		// 	controller: 'contactController'
-		// })
-		// .when('/about', {
-		// 	templateUrl: '../scripts/modules/views/about.html',
-		// 	controller: 'aboutController'
-		// });
-		// .when('/news', {
-		// 	templateUrl: '../modules/views/news.html',
-		// 	controller: 'newsController'
-		// })
-		// .when('/login', {
-		// 	templateUrl: '../modules/views/login.html',
-		// 	controller: 'loginController'
-		// });
+		})
+		.when('/contact', {
+			templateUrl: 'scripts/modules/contact/views/contact.html',
+		 	controller: 'contactController'
+		 })
+		.when('/about', {
+		 	templateUrl: 'scripts/modules/about/views/about.html',
+		 	controller: 'aboutController'
+		})
+		.when('/news', {
+		 	templateUrl: 'scripts/modules/news/views/news.html',
+		 	controller: 'newsController'
+		})
+		.when('/login', {
+		 	templateUrl: 'scripts/modules/login/views/login.html',
+		 	controller: 'loginController'
+		}).
+		otherwise({
+        	redirectTo: '/home'
+      });
 }]);
